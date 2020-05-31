@@ -1,25 +1,12 @@
 import React from 'react'
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
-const Logo = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-}
-
-const Header = () => (
+const Header = ({ data }) => (
   <header id="header">
-    <Logo />
+    <div className="back-button-block"></div>
+    <div className="logo-block">
+      <img src="//listenpraythink.com/wp-content/uploads/2017/09/logo.png" alt="logo" width="100" />
+    </div>
+    <div className="account-icon-block"></div>
   </header>
 )
 

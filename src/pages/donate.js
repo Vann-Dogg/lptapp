@@ -1,11 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const DonatePage = () => (
   <Layout>
-    <SEO title="Donate" />
-    <h1>Donate</h1>
+    <h1>Пожертвования</h1>
   </Layout>
 )
 

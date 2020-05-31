@@ -4,8 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faHome, faStar, faTh } from '@fortawesome/free-solid-svg-icons'
 
 const Nav = () => (
-    <>
-        <nav id="bottomnav" className="bottomnav">
+    <nav id="bottomnav" className="bottomnav">
             <ul className="bottomnav__menu">
                 <li className="bottomnav__menu-item">
                     <Link to="/" className="bottomnav__menu-item-link" activeClassName="active">
@@ -32,8 +31,7 @@ const Nav = () => (
                     </Link>
                 </li>
             </ul>
-        </nav>
-    </>
+     </nav>
 )
 
 export default Nav
